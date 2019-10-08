@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+env_hotels/
+henv/
+venv/
+*.pyc
+app/apis/logs/
+app/logs/
+*.log.*
+*.log
+*.lock
+*.pytest_cache*
+nohup.out
+apidoc/
+node_modules/
+hotelApi/
