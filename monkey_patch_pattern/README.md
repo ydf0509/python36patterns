@@ -12,7 +12,7 @@ gevent库是使用猴子补丁设计模式之一的库，比较复杂。
 这里面没有什么玄学，就是python语法。
 
 利用a.py  b.py run.py，然后你需要把import 改成from import 测试对比，
-以及把run里面的import b放在打猴子补丁之前和打猴子补丁对比运行结果。
+以及把run里面的import b放在打猴子补丁之前和打猴子补丁对比运行结果。 
 ```
 
 
