@@ -74,3 +74,10 @@ if __name__ == '__main__':
 
     client.set_data("Second Test", "Data2")
     client.print_data()
+
+    """
+    "D:/coding2/python36patterns/j2ee模式-组合实体模式.py:64"  16:31:51  Data: Test
+"D:/coding2/python36patterns/j2ee模式-组合实体模式.py:64"  16:31:51  Data: Data
+"D:/coding2/python36patterns/j2ee模式-组合实体模式.py:64"  16:31:51  Data: Second Test
+"D:/coding2/python36patterns/j2ee模式-组合实体模式.py:64"  16:31:51  Data: Data2
+    """
