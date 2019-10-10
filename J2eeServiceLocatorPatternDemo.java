@@ -115,3 +115,13 @@ public interface Service {
  }
 
  //j2ee 服务定位器模式
+ /*
+ Looking up and creating a new Service1 object
+Executing Service1
+Looking up and creating a new Service2 object
+Executing Service2
+Returning cached  Service1 object
+Executing Service1
+Returning cached  Service2 object
+Executing Service2
+ */

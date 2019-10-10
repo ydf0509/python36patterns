@@ -93,3 +93,8 @@ public class J2eeInterceptingFilterDemo {
 }
 
 //j2ee模式-拦截过滤器模式
+/*
+Authenticating request: HOME
+request log: HOME
+Executing request: HOME
+*/

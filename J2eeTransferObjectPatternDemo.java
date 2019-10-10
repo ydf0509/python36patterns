@@ -93,3 +93,9 @@ public class J2eeTransferObjectPatternDemo {
 }
 
 //j2ee 对象传输模式
+/*
+Student: [RollNo : 0, Name : Robert ]
+Student: [RollNo : 1, Name : John ]
+Student: Roll No 0, updated in the database
+Student: [RollNo : 0, Name : Michael ]
+*/
