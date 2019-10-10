@@ -6,7 +6,8 @@
 当对象间存在一对多关系时，则使用观察者模式（Observer Pattern）。比如，当一个对象被修改时，则会自动通知它的依赖对象。观察者模式属于行为型模式。
 有时，我们希望在一个对象的状态改变时更新另外一组对象。
 
-说这么多抽象的概念，说点具体的就是以日志为例，有人把print当做日志用，里面的区别相当大，日志不仅可以有streamhandler和filehandler，还有mailhandler httphandler 等几亿种自定义handler。logger debug时候自动触发各种handler的emit方法。
+说这么多抽象的概念，说点具体的就是以日志为例，有人把print当做日志用，里面的区别相当大，日志不仅可以有streamhandler和filehandler，还有mailhandler httphandler
+等几亿种自定义handler。logger debug时候自动触发各种handler的emit方法。
 用不会日志不理解日志，对logger addHandler各种handler懵逼不知道在干嘛，最主要是不懂观察者模式造成的。
 希望举得例子是接近真实有意义，下面简单使用观察者模式重新模拟实现一个伪日志包。
 """
