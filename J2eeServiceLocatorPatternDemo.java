@@ -13,7 +13,7 @@ public interface Service {
     public void execute();
  }
 
- class Service1 implements Service {
+class Service1 implements Service {
     public void execute(){
        System.out.println("Executing Service1");
     }
@@ -23,7 +23,7 @@ public interface Service {
        return "Service1";
     }
  }
- class Service2 implements Service {
+class Service2 implements Service {
     public void execute(){
        System.out.println("Executing Service2");
     }
@@ -34,7 +34,7 @@ public interface Service {
     }
  }
 
- class InitialContext {
+class InitialContext {
     public Object lookup(String jndiName){
        if(jndiName.equalsIgnoreCase("SERVICE1")){
           System.out.println("Looking up and creating a new Service1 object");
@@ -48,7 +48,7 @@ public interface Service {
  }
 
   
- class Cache {
+class Cache {
   
     private List<Service> services;
   
@@ -79,7 +79,7 @@ public interface Service {
     }
  }
 
- class ServiceLocator {
+class ServiceLocator {
     private static Cache cache;
   
     static {
