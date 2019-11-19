@@ -35,6 +35,6 @@ if __name__ == '__main__':
     A(1, 2)
     A(1, 3)
     """
-    "D:/coding2/python36patterns/创建型模式-享元模式-元类.py:28"  14:19:44  初始化 1,2
+    "D:/coding2/python36patterns/创建型模式-享元模式-元类.py:28"  14:19:44  初始化 1,2  # 这句话只会运行一次，享元模式命中了缓存。
     "D:/coding2/python36patterns/创建型模式-享元模式-元类.py:28"  14:19:44  初始化 1,3
     """
