@@ -37,21 +37,23 @@ class A:
     def eat(self):
         print(f'{self.identity} 吃饭')
 
+
 if __name__ == '__main__':
     A('001').eat()
     A('001').eat()
     A('002').eat()
 
     # 下面是关于这个享元模式被人说成是单例模式的反驳。如果是单例模式print(id(A('001')) == id(A('002'))) 结果会是True
-    print(id(A('001')) == id(A('002')))   # False
+    print(id(A('001')) == id(A('002')))  # False
     print(id(A('001')) == id(A('001')))  # True
 
     """
     不会多次生成 001学号的同学这个对象。
-    "D:/coding2/python36patterns/创建型模式-享元模式.py:17"  15:29:38  实例化 学号为 001 的学生
-    "D:/coding2/python36patterns/创建型模式-享元模式.py:25"  15:29:38  001 吃饭
-    "D:/coding2/python36patterns/创建型模式-享元模式.py:25"  15:29:38  001 吃饭
-    "D:/coding2/python36patterns/创建型模式-享元模式.py:17"  15:29:38  实例化 学号为 002 的学生
-    "D:/coding2/python36patterns/创建型模式-享元模式.py:25"  15:29:38  002 吃饭
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:30"  11:46:53  实例化 学号为 001 的学生
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:38"  11:46:53  001 吃饭
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:38"  11:46:53  001 吃饭
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:30"  11:46:53  实例化 学号为 002 的学生
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:38"  11:46:53  002 吃饭
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:45"  11:46:53  False
+    "D:/coding2/python36patterns/创建型模式-享元模式.py:46"  11:46:53  True
     """
-
