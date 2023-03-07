@@ -53,5 +53,5 @@ if __name__ == '__main__':
 "D:/coding2/python36patterns/创建型模式-单例模式.py:30"  16:00:25  001 吃饭
 "D:/coding2/python36patterns/创建型模式-单例模式.py:30"  16:00:25  001 吃饭
 "D:/coding2/python36patterns/创建型模式-单例模式.py:40"  16:00:25  True
-"D:/coding2/python36patterns/创建型模式-单例模式.py:30"  16:00:25  003 吃饭
+"D:/coding2/python36patterns/创建型模式-单例模式.py:30"  16:00:25  001 吃饭
     """
