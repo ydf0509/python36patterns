@@ -74,3 +74,99 @@ https://zhuanlan.zhihu.com/p/19835717
 代码不可维护，没有高扩展性
 写新文件要想破头皮三天三夜才能开始下笔。
 ```
+
+## ！【重要】 简单例子说明极端面向过程编程非常愚蠢low
+
+情不自禁纯粹极端面向过程编程还是c语言中毒了，从来都不使用面向对象，不用提设计模式。
+
+有些人完全没思考过面向对象，一味的只会说大型项目才需要面向对象，小项目面向过程更合适。简直是胡说八道，不看场景只看项目大小。
+
+比如一个简单需求，描写人,吃饭 增加体重和身高，拉尿体重降低。需求是非常非常的简单了吧，绝对是非常小的项目，单个文件就好了，来验证下是不是小项目面向过程最好。
+
+面向过程来实现，看看代码多垃圾。
+```python
+# 吃饭函数
+def eat(name, height, weight, food_weight):
+    """吃饭：增加体重和身高"""
+    new_weight = weight + food_weight
+    new_height = height + food_weight * 0.01
+    print(f"{name} 吃了 {food_weight} 千克食物，体重: {new_weight} 千克，身高: {new_height} 厘米")
+    return new_height, new_weight
+
+# 拉尿函数
+def pee(name, height, weight, pee_weight):
+    """拉尿：减少体重"""
+    if pee_weight > weight:
+        pee_weight = weight
+    new_weight = weight - pee_weight
+    print(f"{name} 拉了 {pee_weight} 千克尿，体重: {new_weight} 千克，身高: {height} 厘米")
+    return height, new_weight
+
+# 测试代码
+if __name__ == "__main__":
+    # 小明的初始状态
+    xiaoming_height = 170
+    xiaoming_weight = 60
+
+    # 小红的初始状态
+    xiaohong_height = 160
+    xiaohong_weight = 50
+
+    print(f"小明 初始状态 - 身高: {xiaoming_height} 厘米，体重: {xiaoming_weight} 千克")
+    print(f"小红 初始状态 - 身高: {xiaohong_height} 厘米，体重: {xiaohong_weight} 千克")
+
+    # 小明吃饭和拉尿
+    xiaoming_height, xiaoming_weight = eat("小明", xiaoming_height, xiaoming_weight, 2)
+    xiaoming_height, xiaoming_weight = pee("小明", xiaoming_height, xiaoming_weight, 1)
+
+    # 小红吃饭和拉尿
+    xiaohong_height, xiaohong_weight = eat("小红", xiaohong_height, xiaohong_weight, 3)
+    xiaohong_height, xiaohong_weight = pee("小红", xiaohong_height, xiaohong_weight, 2)
+```
+
+面向对象来实现，看看代码实现多简单调用多方便
+```python
+class Person:
+    def __init__(self, name, height, weight):
+        self.name = name
+        self.height = height  # 身高，单位：厘米
+        self.weight = weight  # 体重，单位：千克
+
+    def eat(self, food_weight):
+        """吃饭：增加体重和身高"""
+        self.weight += food_weight
+        self.height += food_weight * 0.01
+        print(f"{self.name} 吃了 {food_weight} 千克食物，体重: {self.weight} 千克，身高: {self.height} 厘米")
+
+    def pee(self, pee_weight):
+        """拉尿：减少体重"""
+        if pee_weight > self.weight:
+            pee_weight = self.weight
+        self.weight -= pee_weight
+        print(f"{self.name} 拉了 {pee_weight} 千克尿，体重: {self.weight} 千克，身高: {self.height} 厘米")
+
+# 测试代码
+if __name__ == "__main__":
+    # 创建小明和小红
+    xiaoming = Person("小明", 170, 60)
+    xiaohong = Person("小红", 160, 50)
+
+    # 小明吃饭和拉尿
+    xiaoming.eat(2)
+    xiaoming.pee(1)
+
+    # 小红吃饭和拉尿
+    xiaohong.eat(3)
+    xiaohong.pee(2)
+```
+
+```
+面向对象起码有封装，极端面向过程那就实现时候，每个函数结尾需要疯狂的return 一大堆变量，然后将一大堆变量传给另外一个函数进行处理。
+
+而面向对象不需要你把一大堆入参疯狂在各个函数传来传去，return来return去。
+
+如果你的思维是c语言中毒了，情不自禁极端面向过程编程，连入门的面向对象封装概念都没用，更别提更高阶的设计模式了。
+
+```
+
+#### 只需要按文档的面向过程转op4步走里面，降维转化，就可以设计出强大的代码，无需死记硬背23种设计模式。
