@@ -38,9 +38,11 @@ https://www.zhihu.com/question/25432487
 https://zhuanlan.zhihu.com/p/19835717
 
 
-## 介绍神级别通用固定oop转化公式，写代码下笔时候行云流水。
+## 介绍神级别通用固定oop转化公式，写代码下笔时候行云流水（只需学习这套固定面向过程转oop公式，远强于背诵设计模式）。
 
 使用这个公式，不需要背设计模式，不需要每次写新文件先花几天想破头皮怎么设计布局代码成为高扩展和高维护。
+
+忘掉设计模式，使用最强最稳定最有固定套路的万能编程思维-python oop四步转化公式。
 
 https://github.com/ydf0509/python36patterns/tree/master/%E5%BF%98%E6%8E%89%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%9C%80%E5%BC%BA%E6%9C%80%E7%A8%B3%E5%AE%9A%E6%9C%80%E6%9C%89%E5%A5%97%E8%B7%AF%E7%9A%84%E4%B8%87%E8%83%BD%E7%BC%96%E7%A8%8B%E6%80%9D%E7%BB%B4-python%20oop%E5%9B%9B%E6%AD%A5%E8%BD%AC%E5%8C%96%E5%85%AC%E5%BC%8F%E3%80%82
 
